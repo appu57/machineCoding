@@ -1,0 +1,47 @@
+.wrapper{
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .like__container{
+    width: 300px;
+    height: 100px;
+    border: 10px solid gray;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  
+  .like{
+    width: 50px;
+    height: 50px;
+    position: relative; /*use relative when using before and after*/
+    transform: rotate(45deg);
+    background-color: pink;
+  }
+  
+  .like::before,
+  .like::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: pink;
+  }
+  
+  .like::before{
+    bottom: 30px;
+  }
+  
+  .like::after{
+    right: 30px;
+  }

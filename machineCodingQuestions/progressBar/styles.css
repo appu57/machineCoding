@@ -1,0 +1,55 @@
+:root {
+    --progressBarWidth: 20%; /* Set an initial value for progress width */
+}
+.wrapper{
+    width: 70%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    gap: 10px;
+}
+
+.progress__bar{
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, blue var(--progressBarWidth),white 0%); /*this property fills the background color only to some width (like just 20% of container will now have blue color) rest other will have white */
+}
+
+.button__container{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    width: max-content;
+    height: max-content;
+    border: none;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: darkcyan;
+    cursor: pointer;
+}
+
+.progress__bar__style2{
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.progress__bar__style2 .progress__inner__bar{
+    width: 100px;/*10% of 100px(parent container)*/
+    height: 40px;
+    background-color: blue;
+    border-radius: 10px;
+
+
+}
