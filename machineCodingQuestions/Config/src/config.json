@@ -1,0 +1,62 @@
+{
+  "form": {
+    "title": "User Registration",
+    "description": "Please fill out the form to register.",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Full Name",
+        "type": "text",
+        "placeholder": "Enter your full name",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Email Address",
+        "type": "email",
+        "placeholder": "Enter your email address",
+        "required": true
+      },
+      {
+        "name": "password",
+        "label": "Password",
+        "type": "password",
+        "placeholder": "Enter a secure password",
+        "required": true
+      },
+       {
+        "name": "Confirm Password",
+        "label": "Confirm Password",
+        "type": "password",
+        "placeholder": "Confirm a secure password",
+        "required": true
+      },
+      {
+        "name": "gender",
+        "label": "Gender",
+        "type": "radio",
+        "options": [
+          { "label": "Male", "value": "male" },
+          { "label": "Female", "value": "female" },
+          { "label": "Other", "value": "other" }
+        ],
+        "required": true
+      },
+      {
+        "name": "newsletter",
+        "label": "Subscribe to Newsletter",
+        "type": "select",
+        "options": [
+          { "label": "Yes", "value": "yes" },
+          { "label": "No", "value": "no" }
+        ],
+        "required": false
+      }
+    ],
+    "submit": {
+      "label": "Register",
+      "action": "/submit-registration"
+    }
+  }
+}
+

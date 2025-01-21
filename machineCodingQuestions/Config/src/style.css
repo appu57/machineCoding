@@ -1,0 +1,70 @@
+body {
+  font-family: sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: auto;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.formFields{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-item:center;
+    gap:20px;
+}
+
+.formFields .form input{
+    width:400px;
+    height:40px;
+    border-radius:20px;
+    border:1px solid black;
+    padding:10px;
+}
+
+.radio{
+    display:flex;
+    justify-content:flex-start;
+}
+button{
+    width:100px;
+    height:20px;
+    padding:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid blue;
+    background:skyblue;
+    border-radius:20px;
+    margin:20px 0px;
+}
+
+select{
+    width:100px;
+    margin:20px;
+    height:20px:
+}
+
+select option{
+       cursor:pointer;
+      font-size:10px
+}
+
+button:hover{
+    background-color:green;
+    cursor:pointer;
+    border:1px solid green;
+}
+
+label{
+    font-weight:bold;
+}
+

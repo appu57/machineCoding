@@ -1,0 +1,68 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: white;
+}
+
+.wrapper .stepper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 400px;
+}
+
+.stepper div {
+  border: 2px solid black;
+  border-radius: 70%;
+  padding: 20px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.button {
+  margin-top: 10vh;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: pink;
+  cursor: pointer;
+}
+
+.stepper div:nth-child(-n + 3)::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  border: 1px solid black;
+  left: 49px;
+}
+
+.blue {
+  background-color: blue;
+  transition: ease-in 0.6s;
+}
+
+.green {
+  background-color: green;
+  transition: ease-in 0.5s;
+}
+
+.green:nth-child(-n + 3):after {
+  background-color: green;
+  transition: ease-out 1s;
+  animation-delay: 1s;
+  border: 1px solid green;
+}
+
+.green {
+
+
+}
+//REMOVE TRANSITION IF THERE IS DELAY
+
