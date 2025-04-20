@@ -1,0 +1,65 @@
+body {
+  font-family: sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: auto;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.wrapper{
+    width: 100%;
+    height:100vh;
+}
+.button__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__wrapper button{
+    border: none;
+    background: pink;
+    padding: 8px;
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.progress{
+    width:100px;
+    height:50px;
+    background: black;
+    margin: 20px 0px;
+}
+
+.inner__progress__bar{
+    height:50px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
